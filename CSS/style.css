@@ -1,0 +1,97 @@
+:root {
+--veryDarkBlue: #070439;
+--desaturatedBlue: #585989;
+--brightBlue: #3065f8;
+--moderateCyan: #3c9f8f;
+--lightGrayishBlue: #f6f6fe;
+--lightGray: #bfbfbf;
+--fontSize: 16px;
+--openSans: "Open Sans", sans-serif;
+--openSansRegular: 400;
+--raleway: "Raleway", sans-serif;
+--ralewayRegular: 400;
+--ralewayBold: 700;
+--mobileText: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--openSans);
+    font-size: var(--fontSize);
+    font-weight: var(--openSansRegular);
+    background-color: white;
+}
+
+/* components */
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 414px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        width: 585px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1150px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1380px;
+    }
+}
+
+
+/* header start */
+
+header {
+    padding: 30px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    max-width: 80px;
+}
+header .logo img {
+    width: 100%;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    font-size: var(--mobileText);
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    bottom: 3.5px;
+}
+header ul li a {
+    color: var(--veryDarkBlue);
+    text-decoration: none;
+}
+/* header end */
