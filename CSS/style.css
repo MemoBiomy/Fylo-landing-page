@@ -598,3 +598,127 @@ section .holder > span:hover svg use {
     }
 }
 /* section end */
+
+
+/* email start */
+
+.email {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--desaturatedBlue);
+    color: white;
+}
+
+.email .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.email h2 {
+    font-weight: var(--ralewayBold);
+    font-family: var(--raleway);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.email p {
+    margin: 0 auto;
+    max-width: 95%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.email form {
+    width: 80%;
+}
+
+.email form input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.email form input:first-child::placeholder {
+    color: var(--lightGray);
+}
+
+.email form input:first-child {
+    background-color: white;
+    position: relative;
+}
+.email form input:first-child + span {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-right: auto;
+    width: fit-content;
+    display: none;
+}
+.email form input:first-child:invalid:not(:focus) {
+    border: 1px solid red;
+}
+.email form input:first-child:invalid:not(:focus) + span {
+    display: block;
+}
+
+.email form input:last-child {
+    background-color: var(--brightBlue);
+    font-weight: var(--ralewayBold);
+    font-family: var(--raleway);
+    margin-top: 10px;
+    color: white;
+    transition: var(--mainTranistionDuration);
+    cursor: pointer;
+}
+
+.email form input:last-child:hover {
+    background-color: #6b9bff;
+}
+
+
+@media (min-width: 992px) {
+    .email h2 {
+        font-size: 26px;
+    }
+    
+    .email p {
+        font-size: 22px;
+        max-width: 85%;
+        margin-bottom: 20px;
+    }
+    .email form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .email form input {
+        display: block;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .email {
+        text-align: start;
+    }
+    .email p  {
+        margin-left: 0;
+    }
+    .email .container {
+        flex-direction: row;
+    }
+    .email form {
+        width: 90%;
+    }
+    .email form input:last-child {
+        width: fit-content;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+/* email end */
